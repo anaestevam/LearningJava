@@ -5,7 +5,10 @@ public class Exestrutural {
 	public static void main(String[] args){
 		
 		Scanner sc = new Scanner(System.in);
-		//-------1---------
+		/*-------1---------
+		 * Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma
+		   mensagem explicativa, conforme exemplos.
+		 */
 		int a;
 		int b;
 		
@@ -14,7 +17,7 @@ public class Exestrutural {
 		System.out.println("Digite valor de B:");
 		b = sc.nextInt(); //receber o valor a partir do teclado
 		int soma = a + b;
-		System.out.println("Resultado da soma: " + soma);
+		System.out.println("SOMA = " + soma);
 		
 		//-------2---------
 		double c;
