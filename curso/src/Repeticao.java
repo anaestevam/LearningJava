@@ -6,25 +6,26 @@ public class Repeticao {
 		Scanner sc = new Scanner(System.in);
 		//-------1---------
 		int a;
+		int soma = 0;
 		
 		
 		System.out.println("Digite valor de A:");
 		a = sc.nextInt(); //receber o valor a partir do teclado nextLine ler a linha inteira
 		
 		while(a != 0) {
-			a = sc.nextInt();                                                               
+			soma += a;
+			a = sc.nextInt();
 		}
 		
+		System.out.println("Soma dos valores inseridos: " + soma);
 		
-		//-------2---------
-		int b;
-		System.out.println("Digite valor de B:");
-		b = sc.nextInt();
+		int x = 0;
+		int y = 4;
 		
-		if(b%2 ==0) {
-			System.out.println("PAR");
-		}else {
-			System.out.println("ÍMPAR");
+		while(x<3) {
+			y = y+2;
+			x= x+1;
+			System.out.println(x + " - " + y);
 		}
 		
 		sc.close();
