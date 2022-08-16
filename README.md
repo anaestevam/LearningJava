@@ -1,4 +1,4 @@
-# LearningLava
+# LearningJava
 
 - Ferramenta:
 Eclipse IDE for Enterprise Java Developers.
