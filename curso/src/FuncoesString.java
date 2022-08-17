@@ -23,6 +23,16 @@ public class FuncoesString {
 		System.out.println("replace: " + s6 + "-");
 		System.out.println("Index of: " + i);
 		System.out.println("Last index of: " + j);
+		
+		/*OPERAÇÃO SPLIT*/
+		
+		String s = "orange apple lemon";
+		
+		String[] vect = s.split(" ");
+		
+		System.out.println(vect[0]);
+		System.out.println(vect[1]);
+		System.out.println(vect[2]);
 	}
 
 }
