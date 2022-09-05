@@ -1,22 +1,25 @@
 package application;
 import java.util.Scanner;
+import java.util.Locale;
+
+import entities.Rectangle;
 
 public class Program {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		Rectangle a = new Rectangle();
 		
-		double x1, x2, x3, y1, y2, y3;
+		System.out.println("Enter rectangle width and heigth: ");
 		
-		System.out.println("Digite o valor das medidas do triangulo X:");
-		x1 = sc.nextDouble();
-		x2 = sc.nextDouble();
-		x3 = sc.nextDouble();
-		System.out.println("Digite o valor das medidas do triangulo Y:");
-		y1 = sc.nextDouble();
-		y2 = sc.nextDouble();
-		y3 = sc.nextDouble();
-
+		a.width = sc.nextDouble();
+		a.height = sc.nextDouble();
+		
+		System.out.printf("AREA = %.2f%n", a.area());
+		System.out.printf("PERIMETER = %.2f%n", a.perimeter());
+		System.out.printf("DIAGONAL = %.2f%n", a.diagonal());
+		
+		sc.close();
 	}
 
 }
