@@ -8,6 +8,11 @@ public class Program {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		//Questão do Retângulo
+		/*
 		Rectangle a = new Rectangle();
 		
 		System.out.println("Enter rectangle width and heigth: ");
@@ -18,7 +23,7 @@ public class Program {
 		System.out.printf("AREA = %.2f%n", a.area());
 		System.out.printf("PERIMETER = %.2f%n", a.perimeter());
 		System.out.printf("DIAGONAL = %.2f%n", a.diagonal());
-		
+		*/
 		sc.close();
 	}
 
