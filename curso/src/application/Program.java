@@ -1,8 +1,10 @@
 package application;
 import java.util.Scanner;
+import java.io.IOException;
 import java.util.Locale;
 
 import entities.Aluno;
+import entities.Banco;
 import entities.Employee;
 import entities.Rectangle;
 
@@ -11,6 +13,28 @@ public class Program {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("Enter account  number: ");
+		int number = sc.nextInt();
+		System.out.print("Enter account holder: ");
+		String nome = sc.nextLine();
+		
+		Banco b = new Banco(number, nome);
+		
+		System.out.print("Is there na initial deposit (y/n)? ");
+		String op = sc.nextLine();
+        
+        
+		if(op == "y"){
+		    System.out.print("Enter a deposit value: ");
+		    
+		} else {
+		    System.out.println("Account data: ");
+		    System.out.printf("Account ", b.toString());
+		    
+		}
+		
+		//	Questao aluno
+		/*
 		Aluno a = new Aluno();
 		
 		System.out.print("Name: ");
@@ -32,8 +56,8 @@ public class Program {
 		}else {
 			System.out.println("PASS");
 		}
-		
-		//Questão do salário
+		*/
+		//Questï¿½o do salï¿½rio
 		/*
 		Employee a = new Employee();
 		double porcentagem;
@@ -55,7 +79,7 @@ public class Program {
 		
 		System.out.println("Update data: %s" + a);
 		*/
-		//Questão do Retângulo
+		//Questï¿½o do Retï¿½ngulo
 		/*
 		Rectangle a = new Rectangle();
 		
