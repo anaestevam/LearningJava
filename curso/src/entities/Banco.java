@@ -10,6 +10,15 @@ public class Banco {
 		this.number = number;
 		this.nome = nome;
 	}
+	
+	public Banco(int number, String nome, double balance, double initialDeposit) {
+		super();
+		this.number = number;
+		this.nome = nome;
+		this.balance = balance;
+		deposit(initialDeposit);
+	}
+
 	public int getNumber() {
 		return number;
 	}
@@ -31,6 +40,14 @@ public class Banco {
 	
 	public String toString() {
 		return "Banco [number=" + number + ", nome=" + nome + ", balance=" + balance + "]";
+	}
+	
+	public void deposit(double amount) {
+		balance += amount;
+	}
+	
+	public void withdraw(double amount) {
+		balance -= amount + 5.0;
 	}
 	
 }
