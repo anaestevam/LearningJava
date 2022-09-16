@@ -7,33 +7,53 @@ import entities.Aluno;
 import entities.Banco;
 import entities.Employee;
 import entities.Rectangle;
-
+/*Encapsulamento*/
 public class Program {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+		Banco b;
 		System.out.print("Enter account  number: ");
 		int number = sc.nextInt();
 		System.out.print("Enter account holder: ");
+		sc.nextLine();
 		String nome = sc.nextLine();
 		
-		Banco b = new Banco(number, nome);
-		
 		System.out.print("Is there na initial deposit (y/n)? ");
-		String op = sc.nextLine();
+		char response = sc.next().charAt(0);
         
-        
-		if(op == "y"){
-		    System.out.print("Enter a deposit value: ");
-		    
+		
+		if(response == 'y'){
+		    System.out.print("Enter initial deposit value: ");
+		    double initialDeposit = sc.nextDouble();
+		    b = new Banco(number, nome, initialDeposit);
 		} else {
-		    System.out.println("Account data: ");
-		    System.out.printf("Account ", b.toString());
-		    
+			b = new Banco(number, nome);
+		    System.out.println(b);
 		}
 		
-		//	Questao aluno
+		System.out.println();
+	    System.out.println("Account data: ");
+	    System.out.println(b);
+		
+	    System.out.println();
+	    System.out.print("Enter a deposit value: ");
+	    double deposit = sc.nextDouble();
+	    b.deposit(deposit);
+		
+	    System.out.println();
+	    System.out.print("Update value: ");
+	    System.out.println(b);
+	    
+	    System.out.println();
+	    System.out.print("Digite um valor para retirar: ");
+	    double retirar = sc.nextDouble();
+	    b.withdraw(retirar);
+		
+	    System.out.println();
+	    System.out.print("Update value: ");
+	    System.out.println(b);
+	    //	Questao aluno
 		/*
 		Aluno a = new Aluno();
 		
@@ -57,7 +77,7 @@ public class Program {
 			System.out.println("PASS");
 		}
 		*/
-		//Quest�o do sal�rio
+		//Questao do salario
 		/*
 		Employee a = new Employee();
 		double porcentagem;
