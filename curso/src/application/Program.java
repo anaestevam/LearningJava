@@ -7,11 +7,13 @@ import entities.Aluno;
 import entities.Banco;
 import entities.Employee;
 import entities.Rectangle;
-/*Encapsulamento*/
+	
 public class Program {
-
+	/*Aula de Encapsulamento*/
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
+		/*Questao banco*/
 		Banco b;
 		System.out.print("Enter account  number: ");
 		int number = sc.nextInt();
@@ -99,7 +101,7 @@ public class Program {
 		
 		System.out.println("Update data: %s" + a);
 		*/
-		//Quest�o do Ret�ngulo
+		//Questao do Retangulo
 		/*
 		Rectangle a = new Rectangle();
 		
