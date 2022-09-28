@@ -7,7 +7,9 @@ import java.math.*;
 import entities.Aluguel;
 
 public class Program1 {
+	
 	/*Aula de vetores*/
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -48,6 +50,17 @@ public class Program1 {
 				System.out.println(i + ": " + aluguel[i]);
 			}
 			
+		}
+		
+		String[] vect = new String[] {"Maria", "Ana", "Lara"};
+		
+		for(int i=0;i<vect.length;i++) {
+			System.out.println(vect[i]);
+		}
+		
+		System.out.println("----------------------");
+		for(String obj : vect) {
+			System.out.println(obj);
 		}
 		
 		
