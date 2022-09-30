@@ -1,10 +1,14 @@
 package application;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.sql.*;
 
 /*
  * DATA-HORA FORMATOS	
@@ -13,7 +17,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Program3 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		
 		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
@@ -70,6 +74,14 @@ public class Program3 {
 		System.out.println("D4 ano = "+ d5.getYear());
 		System.out.println("D4 hora = "+ d5.getHour());
 		System.out.println("D4 minuto = "+ d5.getMinute());
+		
+		
+		SimpleDateFormat sf1 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		Date y1 = sf1.parse("07/11/2022 15:00:00");
+		
+		System.out.println("y1: " + sf1.format(y1));
+		
 		
 		
 		/*
