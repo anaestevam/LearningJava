@@ -1,8 +1,9 @@
-package entities.enums;
+package enumeracao;
 
 public enum Color {
+	
     BLACK,
     BLUE,
-    RED
+    RED;
 
 }

@@ -1,5 +1,7 @@
 package entities;
 
+import enumeracao.Color;
+
 public class Rectangle1 extends Shape{
 
     private Double width;
@@ -30,8 +32,8 @@ public class Rectangle1 extends Shape{
         this.height = height;
     }
 
-    @Override
-    public Double area(){
+   // @Override
+    public double area(){
         return width*height;
     }
 }

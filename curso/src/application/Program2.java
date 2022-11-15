@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.Scanner;
 
 import entities.Salary;
-
+/* Aula de List */
 public class Program2 {
 
 	public static void main(String[] args) {
-		/* Aula de List */
+		
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -43,7 +43,7 @@ public class Program2 {
 		Integer pos = position(list, idsalary);
 		
 		if (pos == null) {
-			System.out.println("Este ID não existe!");
+			System.out.println("Este ID nï¿½o existe!");
 		}else {
 			System.out.print("Digite a porcentagem: ");
 			double percent = sc.nextDouble();

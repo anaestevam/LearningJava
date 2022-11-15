@@ -1,9 +1,10 @@
 package entities;
 
-import entites.enums.Color;
+import enumeracao.Color;
 
 public class Circle1 extends Shape{
-    private Double radius;
+    
+	private Double radius;
 
     public Circle1(){
         super();
@@ -20,8 +21,9 @@ public class Circle1 extends Shape{
     public void setRadius(Double radius) {
         this.radius = radius;
     }
-
+    
+    @Override
     public double area(){
-        return radius;
+        return Math.PI * radius * radius;
     }
 }

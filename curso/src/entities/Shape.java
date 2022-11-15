@@ -1,6 +1,6 @@
 package entities;
 
-import  entities.enums.Color;
+import  enumeracao.Color;
 
 public abstract class Shape{
 
@@ -21,7 +21,5 @@ public abstract class Shape{
         this.color = color;
     }
 
-    public abstract double area(){
-
-    }
+    public abstract double area();
 }

@@ -10,7 +10,7 @@ import enumeracao.Departament;
 import enumeracao.HourContract;
 import enumeracao.Worker;
 import enumeracao.WorkerLevel;
-
+/*Heranca*/
 public class Program4 {
 
 	public static void main(String[] args) throws ParseException {

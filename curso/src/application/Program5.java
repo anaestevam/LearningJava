@@ -5,9 +5,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entites.Shape;
-import entites.enums.Color;
-
+import entities.Circle1;
+import entities.Rectangle1;
+import entities.Shape;
+import enumeracao.Color;
+/*Polimorfismo - metodo abstrato*/
 public class Program5 {
 
     public static void main(String[] args){
@@ -34,9 +36,16 @@ public class Program5 {
             }else {
                 System.out.print("Radius: ");
                 double radius = sc.nextDouble();
-                list.add(new Circle(color, radius));
+                list.add(new Circle1(color, radius));
             }
         }
+        
+        System.out.println();
+        System.out.println("SHAPE AREAS:");
+        for(Shape shape : list) {
+        	System.out.println(String.format("%.2f",shape.area()));
+        }
+        
 
         sc.close();
     }

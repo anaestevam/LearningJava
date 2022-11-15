@@ -1,5 +1,7 @@
 package entities;
 
+import enumeracao.WorkerLevel;
+
 public class Worker {
 	private String name;
 	private WorkerLevel level;
@@ -11,8 +13,8 @@ public class Worker {
 	public void removeContract(HourContract contract) {
 		
 	}
-	public double income(Integer year, Integer month) {
+	/*public double income(Integer year, Integer month) {
 		
 	}
-
+*/
 }
